@@ -17,6 +17,11 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 /*Vue.component('example-component', require('./components/ExampleComponent.vue'));*/
 Vue.component('admin-home', require('./components/admin/AdminMaster.vue').default);
 
+// V-form
+import { Form, HasError, AlertError } from 'vform'
+Vue.component(HasError.name, HasError)
+Vue.component(AlertError.name, AlertError)
+window.Form = Form;
 
 const router = new VueRouter({
   routes, // short for `routes: routes`

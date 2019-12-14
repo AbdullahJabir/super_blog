@@ -18,6 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/{anypath}','HomeController@index')->where('path','.*');
 
 //Post
 Route::get('/post','PostController@all_Post');
+
+
+Route::post('/add-category','CategoryController@add_category');

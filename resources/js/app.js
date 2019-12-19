@@ -18,6 +18,10 @@ Vue.use(VueRouter)
 import {routes} from './routes';
 
 
+import {filter} from './filter'
+// vue router
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 /*Vue.component('example-component', require('./components/ExampleComponent.vue'));*/
